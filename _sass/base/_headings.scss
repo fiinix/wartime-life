@@ -1,0 +1,57 @@
+/* ==========================================================================
+
+
+   Headings
+
+
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+
+	font-weight: $heading-weight;
+	font-family: $heading-family;
+
+	color: inherit;
+
+}
+
+h1, .h1 {
+
+	font-size: 5.063em;
+	line-height: 1.05;
+
+}
+
+h2, .h2 {
+
+	font-size: 3.375em;
+	line-height: 1.10668;
+
+}
+
+h3, .h3 {
+
+	font-size: 2.25em;
+	line-height: 1.22474;
+
+}
+
+h4, .h4 {
+
+	font-size: 1.5em;
+	line-height: 1.3554;
+
+}
+
+h5, .h5 {
+
+	font-size: 1em;
+	line-height: 1.6;
+
+}
+
+h6, .h6 {
+
+	font-size: 0.74em;
+	line-height: 2.1622;
+
+}

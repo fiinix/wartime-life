@@ -1,0 +1,88 @@
+/* ==========================================================================
+
+
+   Mixins
+
+
+   ========================================================================== */
+
+
+
+/**
+ *
+ * Media-query
+ *
+ */
+@mixin mq($point, $IE9: false, $query1: min, $query2: width) {
+	@if $IE9 == true{
+		.lt-ie9 & {
+			@content;
+		}
+		@media screen and (#{$query1}-#{$query2}: em($point)) {
+			@content;
+		}
+	}
+	@else {
+		@media screen and (#{$query1}-#{$query2}: em($point)) {
+			@content;
+		}
+	}
+}
+/**
+ *
+ * Transition
+ *
+ */
+@mixin transition(
+	$property: $transition-property-default,
+	$duration: $transition-duration-default,
+	$timing: $transition-timing-default,
+	$delay: $transition-delay-default) {
+	transition: $property $duration $timing $delay;
+}
+/**
+ *
+ * Elements state
+ *
+ */
+@mixin state {
+	&:hover,
+	&:focus,
+	&:active {
+		@content;
+	}
+}
+
+
+
+/**
+ *
+ * Get mapped values
+ *
+ */
+@function map-has-nested-keys($map, $keys...) {
+  @each $key in $keys {
+    @if not map-has-key($map, $key) {
+      @return false;
+    }
+    $map: map-get($map, $key);
+  }
+  
+  @return true;
+}
+
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+ 
+  @return $map;
+}
+
+@function z($layers...) {
+  @if not map-has-nested-keys($z-layers, $layers...) {
+    @warn "No layer found for `#{inspect($layers...)}` in $z-layers map. Property omitted.";
+  }
+ 
+  @return map-deep-get($z-layers, $layers...);
+}

@@ -1,0 +1,62 @@
+/* ==========================================================================
+
+
+   Links
+
+
+   ========================================================================== */
+
+
+
+a {
+
+	color: $primary-color;
+	position: relative;
+	text-decoration: none;
+
+	&:visited {
+
+		color: darken($primary-color, $deviate);
+
+	}
+
+	&:hover {
+
+		color: lighten($primary-color, $deviate);
+
+	}
+
+	&:focus,
+	&:active {
+
+		
+
+	}
+
+}
+
+blockquote a,
+.header a {
+
+	color: $white;
+
+	&:visited {
+
+		color: darken($white, $deviate);
+
+	}
+
+	&:hover {
+
+		color: lighten($white, $deviate);
+
+	}
+
+	&:focus,
+	&:active {
+
+		
+
+	}
+
+}

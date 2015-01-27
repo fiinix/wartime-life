@@ -1,0 +1,32 @@
+/* ==========================================================================
+
+
+   Horizontal ruler
+
+
+   ========================================================================== */
+
+hr:after {
+
+    color: $luma-80;
+    content: "···";
+    height: 0;
+    letter-spacing: 0.375em;
+    padding-left: 0.375em;
+
+}
+
+hr {
+
+    border: 0 none;
+    clear: both;
+    display: block;
+    font-size: 2em;
+    font-weight: 400;
+    height: 0;
+    line-height: 1;
+    margin: 1em 0 2em;
+    padding: 0;
+    text-align: center;
+    
+}

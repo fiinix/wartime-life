@@ -1,0 +1,45 @@
+/* ==========================================================================
+
+
+   Elements
+
+
+   ========================================================================== */
+
+abbr,
+abbr[title] {
+
+	letter-spacing: 0.1em;
+
+}
+abbr[title] {
+
+	cursor: help;
+	border-bottom: 1px dotted $luma-50;
+
+}
+.small-caps {
+
+	/* Manually adjusted to mimic a small cap and fall within
+	 * the x-height of the body font */	
+
+	font-size: 0.74em;
+	text-transform: uppercase;
+
+}
+
+sup,
+sub {
+  font-size: 0.74em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.375em;
+}
+
+sub {
+  bottom: -0.375em;
+}

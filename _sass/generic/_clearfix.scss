@@ -1,0 +1,14 @@
+/**
+* Micro clearfix, from:
+* http://nicolasgallagher.com/micro-clearfix-hack/
+*
+* Adopted for modern browsers.
+*
+*/
+%clearfix {
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}

@@ -1,0 +1,132 @@
+/* ==========================================================================
+
+
+   Wartimelife.co.uk
+
+
+   ========================================================================== */
+
+
+
+/* Palette
+   ========================================================================== */
+$deviate:						10;
+
+$asparagus:						#7b9966;
+$hunter-green:					#4b5841;
+$charcoal:						#191b18;
+$smoke:							#f5f9fa;
+
+
+$primary-color:					$asparagus;
+$secondary-color:				$hunter-green;
+$tertiary-color:				$charcoal;
+$accent-color:					$smoke;
+
+$black:							$charcoal;
+$white:							$smoke;
+
+$luma-100:						$white;
+$luma-90:						mix($white, $black, 90%);
+$luma-80:						mix($white, $black, 80%);
+$luma-70:						mix($white, $black, 70%);
+$luma-60:						mix($white, $black, 60%);
+$luma-50:						mix($white, $black, 50%);
+$luma-40:						mix($white, $black, 40%);
+$luma-30:						mix($white, $black, 30%);
+$luma-20:						mix($white, $black, 20%);
+$luma-10:						mix($white, $black, 10%);
+$luma-0:						$black;
+
+
+/* Typography
+   ========================================================================== */
+$font-size:						16;
+
+$font-leading:					28;
+
+$font-weight:					400;
+$font-style:					normal;
+$font-family:					'Cutive', Georgia, serif;
+$measure:						66;
+
+$font-constant:					2.03;
+/**
+ * Font constant
+ *
+ * http://www.pearsonified.com/2012/01/characters-per-line.php
+ * Georgia is e.g. 2.27, I've measured Merriweather at ~2.03
+ *
+ */
+
+$heading-family:				'Fira Sans', sans-serif;
+$heading-weight:				800;
+
+$ui-family:						'1942 report', monospace;
+$ui-weight:						400;
+
+$fixed-family:					Consolas, monospace;
+
+
+/* Paths
+   ========================================================================== */
+$font-path:						"/assets/fonts/";
+
+
+/**
+ *
+ * Transitions
+ *
+ */
+$ease-in-out-back:				cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+$transition-property-default: 	all;
+$transition-duration-default:	300ms;
+$transition-timing-default:		$ease-in-out-back;
+$transition-delay-default:		0ms;
+
+
+
+/**
+ *
+ * Opinionated breakpoints
+ *
+ */
+$breakpoint-wrist:				321;
+$breakpoint-palm:				481;
+$breakpoint-lap:				769;
+$breakpoint-desk:				1025;
+$breakpoint-wall:				1367;
+$breakpoint-mall:				1921;
+
+
+$canon:							18;
+
+$canon-margin-left:				2;
+$canon-margin-top:				2;
+$canon-margin-right:			4;
+$canon-margin-bottom:			4;
+
+$z-layers: (
+	"goku":						9001, 
+	"shoryuken":				8000,
+	"modal": (
+	"base":						500,
+	"close":					100,
+	"header":					50,
+	"footer":					10
+	),
+	"default":					1,
+	"below":					-1,
+	"bottomless-pit":			-9000
+);
+
+
+/**
+ *
+ * Borders
+ *
+ */
+$border-width:					1;
+$border-style:					solid;
+$border-color:					$luma-50;

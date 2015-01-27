@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<p class="align-center">
+<img class="mof-logo" src="/assets/img/ministry-of-food.png" alt="Ministry of Food">
+</p>
+{% for post in site.posts limit:5 %}
+<article class="post-preview">
+
+<h3 class="h3"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | markdownify | strip_html | trim  }}</a></h3>
+<p class="align-center">
+{% include date.html type="index" %}
+by
+<a href="">{{ post.author }}</a>
+</p>
+<p>{{ post.excerpt | markdownify | strip_html | trim }}</p>
+</article>
+
+<hr>
+
+{% endfor %}

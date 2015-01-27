@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	{% include head.html %}
+
+	<!-- {% if page.tile and page.color %}
+	<body style="background-color:{{ page.color }};background-image:url({{ page.tile }});">
+	{% elsif page.tile %}
+	<body style="background-image:url({{ page.tile }});">
+	{% elsif page.color %}
+	<body style="background-color:{{ page.color }};">
+	{% else %}
+	<body>
+	{% endif %} -->
+	<body>
+
+	{% include header.html %}
+
+	<main class="main" role="main">
+		<div class="container">
+			{{ content }}
+		</div>
+	</main>
+
+	<!-- {% include footer.html %} -->
+
+	{% include scripts.html %}
+	</body>
+</html>

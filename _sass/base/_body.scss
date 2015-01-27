@@ -1,0 +1,32 @@
+/* ==========================================================================
+
+
+   Base.body
+
+
+   ========================================================================== */
+html,
+body {
+
+	height: 100%;
+
+}
+body {
+
+	font-size: percentage($font-size/16) +0%;
+	line-height: $font-leading/$font-size;
+	font-family: $font-family;
+
+	background-color: $white;
+	color: contrast($white);
+
+	overflow-x: hidden;
+
+}
+
+.container {
+
+	max-width: 32em;
+	margin: 0 auto;
+
+}

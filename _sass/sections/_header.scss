@@ -1,0 +1,35 @@
+/* ==========================================================================
+
+
+   Header
+
+
+   ========================================================================== */
+.header {
+
+	width: 100%;
+
+	background-color: $primary-color;
+	color: contrast($primary-color);
+
+	padding: 1.5em;
+
+	background-image:url(/assets/img/cover.png);
+
+	background-position: 50% 50%;
+	background-size: cover;
+
+	overflow: hidden;
+
+	@include mq($breakpoint-lap) {
+
+		position: fixed;
+		width: 35%;
+		height: 100%;
+
+		text-align: center;
+		background-position: 50% 0%;
+
+	};
+
+}

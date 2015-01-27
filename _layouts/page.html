@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="container">
+ <div class="group" role="main">
+   <section class="col col--primary">
+
+      <h1 class="h2">{{page.title}}</h1>
+
+      {{ content }}
+
+   </section>
+   <aside class="col col--secondary" role="complementary">
+
+    <div class="introduction">
+      <h4>New here?</h4>
+
+      {% include copy__archive.html %}
+
+    </div>
+    <div class="frequent-topics">
+      <h4>Frequent topics</h4>
+
+      {% include site__tags.html %}
+
+    </div>
+
+   </aside>
+ </div>
+</div>
