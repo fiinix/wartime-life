@@ -9,13 +9,57 @@ figure {
 
 	padding: 0;
 
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+
+	margin-left: 0em;
+	margin-right: 0em;
+
+	position: relative;
+
+	@include mq($breakpoint-lap) {
+
 	margin-top: 4.5em;
 	margin-bottom: 4.5em;
 
 	margin-left: -4.5em;
 	margin-right: -4.5em;
 
-	position: relative;
+	};
+
+}
+.right,
+.left {
+
+	margin-top: 1.5em;
+
+	@include mq($breakpoint-lap) {
+
+		max-width: 12em;
+
+	};
+
+}
+
+.right {
+
+	@include mq($breakpoint-lap) {
+
+		float: right;
+		margin-left: 1.5em;
+
+	};
+
+}
+
+.left {
+
+	@include mq($breakpoint-lap) {
+
+		float: left;
+		margin-right: 1.5em;
+
+	};
 
 }
 
