@@ -10,13 +10,22 @@ blockquote {
 	background-color: $primary-color;
 	color: contrast($primary-color);
 
-	padding: 3em 4.5em;
+	padding: 1.5em 0.75em;
 
-	margin-left: -4.5em;
-	margin-right: -4.5em;
+	margin-left: -0.75em;
+	margin-right: -0.75em;
 
 	border: 1em dashed $white;
 	border-width: 0.15em 0;
+
+	@include mq($breakpoint-lap) {
+
+		padding: 3em 4.5em;
+
+		margin-left: -4.5em;
+		margin-right: -4.5em;
+
+	};
 
 }
 
