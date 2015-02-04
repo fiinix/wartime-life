@@ -16,7 +16,7 @@ The next day I sank right into my new 1940’s personality! And it’s so much f
 
 I was also not at all as cold as I thought I’d be. Keeping warm is already a daily occupation for me so I really dreaded the bare legs, but actually...wool is ridiculously warm. Itchy, but warm.
 
-<figure>
+<figure class="right">
 	<img src="/assets/posts/rollers.jpg" alt="">
 </figure>
 
@@ -36,7 +36,7 @@ In the afternoon when Lucien came home we made the weirdest dinner I’ve ever m
 
 I really liked the potato fingers! Lucien liked spam as always (he actually asked for a spam sandwich this morning). Carlos liked the soup, which is still a mystery to me, I thought it tasted a little too much like turnip, but hey, something for everybody!
 
-<figure>
+<figure class="left">
 	<img src="/assets/posts/food.jpg" alt="">
 </figure>
 
@@ -46,13 +46,13 @@ We played Cluedo.
 
 Carlos got us some games to play now that we are going to, at least, try to cut down on our electronic dependency and I must say I’m really enjoying doing things together like we do now. But I suppose that was expected.
 
-<figure>
+<figure class="right">
 	<img src="/assets/posts/cluedo.jpg" alt="">
 </figure>
 
 After living a day to the sound of the Andrew Sisters I though I should end it with a hot water bottle, Agatha Christie and a lady sherry. In the clingiest nightdress I’ve ever owned of course.
 
-<figure>
+<figure class="left">
 	<img src="/assets/posts/book.jpg" alt="">
 </figure>
 
