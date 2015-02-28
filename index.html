@@ -9,9 +9,7 @@ layout: default
 
 <h3 class="h3"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | markdownify | strip_html | trim  }}</a></h3>
 <p class="align-center">
-{% include date.html type="index" %}
-<!-- by
-<a href="">{{ post.author }}</a> -->
+{% include date.html type="index" %} | by {{ post.author }}
 </p>
 <p>{{ post.excerpt | markdownify | strip_html | trim }}</p>
 </article>
